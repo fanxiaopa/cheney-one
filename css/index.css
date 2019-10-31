@@ -1,0 +1,192 @@
+/*页面整体底色*/
+body{background: #222222;  }
+
+/*除了轮播图以外，设置中间内容区域里的内边距*/
+.container-fluid>div:not(:nth-child(1)){
+    padding-left: 100px;
+    padding-right: 100px;
+}
+@media screen and (max-width: 678px){
+    .container-fluid>div:not(:nth-child(1)){
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+/***********************轮播图模块**************/
+/*轮播图距导航栏的距离*/
+ .carousel{
+    margin-top: 6rem;
+}
+/*轮播图指示器 小手*/
+/*.carousel-indicators li{
+   cursor: pointer;
+} */
+
+/********************中间视频模块*********************/
+/*视屏位置*/
+.video_module {
+    margin-top: 3rem;
+}
+/*关于我们*/
+.video_module>div:nth-child(2){
+    color: white;
+    background: #d2b365;
+    text-align: end;
+}
+.video_module div:nth-child(2)>h2{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.video_module div:nth-child(2)>h4{
+    margin-bottom: 4rem;
+}
+/*改变关于我们盒子的内边距和外边距，不被撑高*/
+@media screen and (max-width: 1020px){
+    .video_module div:nth-child(2){
+        padding: 0;
+    }
+    .video_module div:nth-child(2)>h2{
+        margin-bottom: 0rem;
+        margin-top: 0rem;
+    }
+    .video_module div:nth-child(2)>h4{
+        margin-bottom: 0rem;
+    }
+
+}
+
+
+/*************中间内容数据图片板块(.datas)**************/
+.datas{
+    margin-top: 2rem;
+    /*position: absolute;*/
+    /*z-index: 100;*/
+    /*top: 50%;*/
+}
+.datas>img{
+    width: 100%;
+}
+
+/***************中间内容的展示模块(.club_show)**************/
+#club_show>h3,#club_show>h5{text-align: center}
+#club_show{
+    padding-left: 0;
+    padding-right: 0;
+    background: #101010;
+    padding-top: 3rem;
+}
+#club_show>div{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+/*小屏时，让展示图片不要外边距*/
+@media screen and (max-width: 576px) {
+    #club_show>div{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+/*设置CLASS VIDEO字体*/
+#club_show>h3{
+    color: #9f8759;
+    font-size:2.5rem;
+}
+/*设置课堂视屏字体*/
+#club_show>h5{
+    color: whitesmoke;
+    font-size: .9rem;
+    margin-bottom: 1.5rem;
+}
+/*设置弹性，子元素主轴交叉轴居中,让舞蹈种类字体居中*/
+#club_show>.dance>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*图片上的文字字体和绝对定位*/
+#club_show>.dance>div>div{
+    color: #fff;
+    position: absolute;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+/*小屏时舞蹈种类图片一行显示两个*/
+@media screen and (max-width:575px) {
+    #club_show .row>div{width: 50%}
+}
+/*******导师图片*********/
+/*拉开teacher的上边距*/
+.dance+h3{
+    margin-top: 3rem;
+}
+
+/*实现图片间之间距离*/
+#club_show>.teacher>div>div{
+    padding-right: .5rem;
+}
+/*图片底部p标签的背景*/
+#club_show>.teacher>div>div>p{
+    margin-bottom: 0;
+    background: white;
+    padding: 0;
+    text-align: center;
+}
+/*设置图片*/
+#club_show>.teacher>div>div>a>img{
+    box-sizing: border-box;
+    border-bottom: none;
+}
+/*设置超链接*/
+#club_show>.teacher>div>div>p>a{
+    text-decoration: none;
+    color: #333;
+    background: white;
+
+}
+/*******************底部的咨询******************/
+/*底部板块的背景*/
+@media screen and (max-width:575px){
+    #club_show+.news_footer{
+        display: none;
+    }
+}
+.news_footer{
+    background: #222222;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.news_footer>div>div{
+    background-repeat: no-repeat;
+}
+/*设置背景图片*/
+.news_footer>div>div:nth-child(1){
+    background-image: url("../img/index/q1.png");
+}
+/*设置第二个框的左右边框*/
+.news_footer>div>div:nth-child(2){
+    background-image: url("../img/index/q2.png");
+    padding-right: 5rem;
+    border-right: 1px solid #333;
+    border-left: 1px solid #333;
+}
+.news_footer>div>div:nth-child(3){
+    background-image: url("../img/index/q3.png");
+}
+/*设置ul列表样式*/
+.news_footer>div>div>ul{
+    list-style: none;
+    margin-left: 4rem;
+}
+/*设置标题字体*/
+.news_footer>div>div>ul h4{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color:#888888;
+}
+/*设置a标签样式*/
+.news_footer>div>div>ul a{
+    color:#888888;
+    text-decoration: none;
+}

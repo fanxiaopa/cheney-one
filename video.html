@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src=" js/jquery.min.js"></script>
+    <script src=" js/popper.min.js"></script>
+    <script src=" js/bootstrap.min.js"></script>
+    <!-- 引入video.js 网络文件 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.3.0/video-js.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.3.0/video.min.js"></script>
+    <script src="js/video.js"></script>
+    <link rel="stylesheet" href="css/index_video.css">
+    <link rel="stylesheet" href="css/other_video.css">
+    <!-- 引入头部和尾部脚本文件 -->
+    <script src="js/funs.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <link rel="stylesheet" href="css/place.css">
+    <!-- 引入vue和vue-router -->
+    <script src="js/vue.js"></script>
+    <script src="js/vue-router.js"></script>
+    <!-- 引入视频组件 -->
+    <script src="js/videoJs/v1.js"></script>
+    <script src="js/videoJs/v2.js"></script>
+    <script src="js/videoJs/v3.js"></script>
+    <script src="js/videoJs/v4.js"></script>
+    <script src="js/videoJs/v5.js"></script>
+    <script src="js/videoJs/v6.js"></script>
+    <script src="js/videoJs/v7.js"></script>
+    <script src="js/videoJs/v8.js"></script>
+    <!-- 引入路由模块 -->
+    <script src="js/videoJs/router.js"></script>
+</head>
+<body>
+<header></header>
+<div id="app" class='container'>
+    <router-view></router-view>
+</div>
+<footer></footer>
+<script>
+    var vm=new Vue({
+        el:"#app",
+        data:{
+            
+        },
+        router
+    })
+</script>
+</body>
+</html>

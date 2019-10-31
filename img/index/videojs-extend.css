@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+  Player Skin Designer for Video.js
+  http://videojs.com
+  To customize the player skin edit 
+  the CSS below. Click "details" 
+  below to add comments or questions.
+  This file uses some SCSS. Learn more  
+  at http://sass-lang.com/guide)
+  This designer can be linked to at:
+  https://codepen.io/heff/pen/EarCt/left/?editors=010
+*/
+$primary-foreground-color: #fff; // #fff default
+$primary-background-color: #2B333F;  // #2B333F default
+$center-big-play-button: true; // true default
+.video-js {
+  font-size: 10px;
+  color: #fff;
+}
+.vjs-default-skin .vjs-big-play-button {
+	font-size: 8rem;
+    line-height: 9.5rem;
+    height: 10rem;
+    width: 10rem;
+    border: 0.4rem solid #fff;
+    border-radius: 5rem;
+
+}
+.video-js .vjs-control-bar,
+.video-js .vjs-big-play-button,
+.video-js .vjs-menu-button .vjs-menu-content {
+  background: none;
+  background: none;
+}
+.video-js .vjs-slider {
+  background-color: #54637a;
+  background-color: rgba(#54637a, 0.5);
+}
+.video-js .vjs-volume-level,
+.video-js .vjs-play-progress,
+.video-js .vjs-slider-bar {
+  background: #fff;
+}
+.video-js .vjs-load-progress {
+  background: lighten(#54637a, 25%);
+  background: rgba(#54637a, 0.5);
+}
+.video-js .vjs-load-progress div {
+  background: lighten(#54637a, 50%);
+  background: rgba(#54637a, 0.75);
+}
+
+@media (max-width: 800px){
+.vjs-default-skin .vjs-big-play-button {
+	font-size: 4rem;
+    line-height: 5.5rem;
+    height: 6rem;
+    width: 6rem;
+    border: 0.3rem solid #fff;
+    border-radius: 3rem;
+}
+}

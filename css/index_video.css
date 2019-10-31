@@ -1,0 +1,37 @@
+/* 进度条背景色 */
+.video-js .vjs-play-progress{
+    color: white;
+    background-color: white;
+  }
+  /*鼠标点进度条时的颜色*/
+  .video-js .vjs-progress-control .vjs-mouse-display{
+    background-color: black;
+  }
+  /*移入进度条上方时的显示区域*/
+  .vjs-mouse-display .vjs-time-tooltip{
+    padding-bottom: 6px;
+    background-color: black;
+  }
+
+
+  /* 中间大的播放按钮 透明*/
+  .index.video-js .vjs-big-play-button{ 
+    opacity: 0;
+  }
+  /* .vjs-control-bar{
+      background: transparent;
+  } */
+  .video-js.vjs-paused .vjs-big-play-button{ /* 视频暂停时显示播放按钮 */
+    display: block;
+  }
+  
+  
+/* 视频占满容器高度 */
+.video-js.vjs-fluid,
+.video-js.vjs-16-9,
+.video-js.vjs-4-3{ 
+  height: 100%;
+  background-color: gray;
+}
+
+

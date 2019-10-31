@@ -1,0 +1,43 @@
+/*设置导航栏背景颜色和固定导航栏*/
+.navbar{
+    background: #1a1a1a;
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+}
+
+.container-fauld{width: 100% !important;}
+
+/*大屏*/
+@media screen and (min-width: 1185px){
+    .navbar>.img-fluid{
+        height:80px;}
+    .navbar>img{margin-left: 120px;margin-right: 250px}
+    #content>ul>li{
+        margin-left: 30px;
+    }
+}
+@media screen and (min-width: 767px) and (max-width: 1184px){
+    .navbar>.img-fluid{
+        height:80px;}
+    .navbar>img{margin-left: 50px;margin-right: 50px}
+    #content>ul>li{
+        margin-left: 5px;
+    }
+}
+@media screen and (min-width: 575px) and (max-width: 767px){
+    .navbar>.img-fluid{height:50px;}
+    .navbar>img{margin-left: 10px;margin-right: 50px}
+    #content>ul>li{
+        margin-left: 5px;
+    }
+}
+/*小屏*/
+@media screen and (max-width: 575px){
+    .navbar>.img-fluid{height:40px}
+    .navbar>img{margin-left: 0px;}
+    #content>ul>li{
+        margin: 15px;
+    }
+}
+#content{z-index: 100}

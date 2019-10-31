@@ -1,0 +1,85 @@
+body{background: #222222;  }
+/**************************头顶导航栏*************************/
+#tab{
+   height: 1.5rem;
+}
+.container-fluid{
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 8rem;
+}
+.container-fluid>#tab{
+    list-style: none;
+    /* text-decoration: none; */
+}
+/*设置导航栏下的li标签*/
+.container-fluid>#tab>li{
+    float: left;
+    background: white;
+   width: 4rem;height:1.5rem;
+   text-align: center;
+   border-radius: .3rem;
+}
+/*设置鼠标移入li标签时的样式*/
+.container-fluid>#tab>li:not(.btn-primary):hover{
+    background:rgba(207, 195, 195, 0.829);
+    cursor: pointer;
+}
+
+
+/*设置导航按钮激活时的状态*/
+.container-fluid>#tab>.btn-primary{
+    background-color: #b18443;
+    border-color: #b18443;
+}
+/*设置li标签之间的距离*/
+.container-fluid>#tab>li+li{
+    margin-left: 2rem;
+}
+/*设置a标签的样式*/
+.container-fluid>#tab>li>a{
+    color: black;
+    text-decoration: none;
+}
+/************内容板块*************/
+@media screen and (max-width:730px){
+    /*改变中间内容区域的内边距*/
+    .container-fluid{
+        padding-left:.2rem;
+        padding-right:.2rem;
+    }
+    /*改变颜色背景*/
+    body{
+        background: #eaeaea;
+    }
+    /*改变导航栏的内边距*/
+    #tab{
+        padding: 0;
+    }
+    /*改变导航栏的li标签之间的距离*/
+    .container-fluid>#tab>li+li{
+        margin-left: .2rem;
+    }
+}
+/*整个显示卡片区域距离上方距离*/
+#container{
+    margin-top: 2rem;
+}
+/*每个卡片里的图片宽度*/
+#container img{
+    width: 100%;
+}
+/*卡片的文字*/
+.branch-text{
+    background: white;
+    padding: .5rem;
+}
+/*卡片的标题*/
+h5.branch-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.borderRadius{
+    border-radius: .7rem;
+    overflow: hidden;
+}

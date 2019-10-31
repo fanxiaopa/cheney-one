@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src=" js/jquery.min.js"></script>
+    <script src=" js/popper.min.js"></script>
+    <script src=" js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <!-- 引入video.js 网络文件 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.3.0/video-js.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.3.0/video.min.js"></script>
+    <script src="js/video.js"></script>
+    <link rel="stylesheet" href="css/index_video.css">
+    <!-- 引入头部和尾部脚本文件 -->
+    <script src="js/funs.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+<!--头部-->
+<header></header>
+<!--中间内容-->
+<div class="container-fluid px-0">
+    <!--轮播图板块-->
+    <div id="demo" class="carousel slide" data-ride="carousel" data-interval="3000">
+        <!--轮播图片-->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href=""><img class="img-fluid w-100" src="img/index/class-basic-desktop.jpg " alt=""/>
+            </div></a>
+            <div class="carousel-item">
+                <a href=""><img class="img-fluid w-100" src="img/index/class-child-desktop.jpg" alt=""/></a>
+            </div>
+            <div class="carousel-item">
+                <a href=""><img class="img-fluid w-100" src="img/index/class-personal-desktop.jpg" alt=""/></a>
+            </div>
+            <div class="carousel-item">
+                <a href=""><img class="img-fluid w-100" src="img/index/class-pro-desktop.jpg" alt=""/></a>
+            </div>
+        </div>
+        <!--左右箭头-->
+        <a data-slide="prev" href="#demo" class="carousel-control-prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a data-slide="next" href="#demo" class="carousel-control-next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+        <!--轮播指示器-->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="3"></li>
+        </ul>
+    </div>
+    <!--中间视频板块-->
+    <div class="row video_module mx-0">
+        <!--视频-->
+        <div class="col-md-7 col-sm-12 px-0">
+            <div>
+                <video id="example_video_1" class="index video-js vjs-fluid img-fluid" poster="img/index/video.png">
+                    <source src="https://zaha-main-1254037718.cos.ap-beijing.myqcloud.com/zaha.mp4" type="video/mp4">
+               </video>
+            </div>
+        </div>
+        <!--关于我们-->
+        <div class="col-md-5 col-sm-12 ">
+            <h2>ZAHACLUB 嘉禾舞社</h2>
+            <h4>Dancing is my life</h4>
+            <p>我们成立于2004年</p>
+            <p>是中国成立最早的街舞厂牌之一</p>
+            <p>目前在全国有18家专业街舞培训场馆</p>
+            <p>始终脚踏实地进行街舞培训教学</p>
+            <p>是国内最专业规模最大的街舞培训机构之一</p>
+        </div>
+    </div>
+    <!--数据板块-->
+    <div class="datas">
+        <img src="img/index/intro6.jpg" alt=""/>
+    </div>
+    <!--展示模块-->
+    <div id="club_show">
+        <h3>CLASS VIDEO</h3>
+        <h5>课堂视频</h5>
+        <!--舞种图片-->
+        <div class="row dance">
+            <div class="col-lg-4 col-md-6 px-0 ">
+                <a href=""><img class="img-fluid" src="img/index/v-hiphop.jpg" alt=""/></a>
+                <div>Hip hop</div>
+            </div>
+            <div class="col-lg-4 col-md-6 px-0">
+                <a href=""><img class="img-fluid" src="img/index/v-jazz.jpg" alt=""/></a>
+                <div>Jazz</div>
+            </div>
+            <div class="col-lg-4 col-md-6 px-0">
+                <a href=""><img class="img-fluid" src="img/index/v-popping.jpg" alt=""/></a>
+                <div>Poping</div>
+            </div>
+            <div class="col-lg-4 col-md-6 px-0">
+                <a href=""><img class="img-fluid" src="img/index/v-child.jpg" alt=""/></a>
+                <div>Child</div>
+            </div>
+            <div class="col-lg-4 col-md-6 px-0">
+                <a href=""><img class="img-fluid" src="img/index/v-mv.jpg" alt=""/></a>
+                <div>Mv</div>
+            </div>
+            <div class="col-lg-4 col-md-6 px-0">
+                <a href=""><img class="img-fluid" src="img/index/v-choreo.jpg" alt=""/></a>
+                <div>Choreo</div>
+            </div>
+        </div>
+        <!--专业导师模块-->
+        <h3>TEACHERS</h3>
+        <h5 >专业导师</h5>
+        <div class="row teacher">
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-5 p-0">
+                <div>
+                    <a href=""><img class="img-fluid " src="img/index/9.jpg" alt=""/></a>
+                    <p><a href="">Bobo</a></p>
+                </div>
+
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-5 p-0">
+                <div>
+                    <a href=""><img class="img-fluid" src="img/index/10.jpg" alt=""/></a>
+                    <p><a href="">Mona</a></p>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-5 p-0">
+                <div>
+                    <a href=""><img class="img-fluid" src="img/index/18.jpg" alt=""/></a>
+                    <p><a href="">Tianqiao</a></p>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-5 p-0">
+                <div>
+                    <a href=""><img class="img-fluid" src="img/index/17.jpg" alt=""/></a>
+                    <p><a href="">Xoy</a></p>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-5 p-0">
+                <div>
+                    <a href=""><img class="img-fluid" src="img/index/19.jpg" alt=""/></a>
+                    <p><a href="">Shishi</a></p>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-5 p-0">
+                <div>
+                    <a href=""><img class="img-fluid" src="img/index/13.jpg" alt=""/></a>
+                    <p><a href="">Coco</a></p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="news_footer">
+        <div class="row ">
+            <div class="col-lg-3 px-0">
+                <ul>
+                    <li><h4>课程安排</h4></li>
+                    <li><a href="">常规流行班</a></li>
+                    <li><a href="">少儿班</a></li>
+                    <li><a href="">专业班</a></li>
+                    <li><a href="">私教班</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-6 ">
+                <ul>
+                    <li><h4>最新资讯</h4></li>
+                    <li><a href="">嘉禾舞社《热血街舞团》第一集炸裂开场，小新老师顺利晋级鹿晗、王嘉尔战队</a></li>
+                    <li><a href="">ZAHA Sugar全情演绎街舞版《亲爱的》，在第五届 Dance Vision舞台绽放自我！</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 px-0">
+                <ul>
+                    <li><h4>常见问题</h4></li>
+                    <li><a href="">嘉禾舞社都教哪些风格的舞蹈？</a></li>
+                    <li><a href="">我从来没学过一点基础都没有可以学么？</a></li>
+                    <li><a href="">你们的培训地点在哪？</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--尾部-->
+<footer></footer>
+</body>
+
+</html>

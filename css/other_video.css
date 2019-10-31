@@ -1,0 +1,64 @@
+.video{
+    width: 50rem;
+    height: 40rem;
+}
+.video-content{
+    padding: 1.5rem;
+    background: #fff;
+    color: #333;
+    margin-bottom: 5rem;
+}
+.container{
+    margin-top: 7.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.video-js{
+    display: flex;
+}
+.video-js .vjs-big-play-button{ /* 中间大的播放按钮 */
+    font-size: 3rem;
+    line-height:5.8rem;
+    height: 6rem;
+    width: 6rem;
+    -webkit-border-radius: 2.5rem;
+    -moz-border-radius: 2.5rem;
+    border-radius: 6rem;
+    background-color: rgba(115,133,159,.5);
+    border-width: 0.25rem; 
+    
+    /* margin-top: 50%;
+    margin-left: 50%;*/
+
+    /* 让播放按钮水平居中 */
+    padding: 0;
+    position: absolute;
+    left: 0;right: 0;top: 0;bottom: 0;
+    margin:auto;
+  }
+  /* 视频暂停时显示播放按钮 */
+  .video-js.vjs-paused .vjs-big-play-button{ 
+    display: block;
+  }
+
+  @media screen and (max-width:576px){
+    .container{
+        margin-top: 3.52rem;
+        padding-right:0;
+        padding-left: 0;
+        margin-bottom: 0;
+        
+    }
+    .video-content{
+        background: #111;
+        color:#ccc;
+        /* font-size: .9rem; */
+        padding:1rem 1rem 1rem 1rem;
+        margin-bottom: 0;
+    }
+    .video-content h2{
+        font-size: 1.5rem;
+    }
+  }
+
+  
